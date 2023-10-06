@@ -1,0 +1,148 @@
+
+/* Fonts */
+
+@font-face {
+    font-family: BungeeShade-Regular;
+    src: url(fonts/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: BungeeOutline-Regular;
+    src: url(fonts/BungeeOutline-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Condensed;
+    src: url(fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf); 
+}
+
+@font-face {
+    font-family: Barlow-Semi-Condensed;
+    src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+
+/* Fonts */
+
+/* Body / Main */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/170505160212-jimi-hendrix-tease-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 300vh;
+    width: 80vw;
+    margin: auto;
+    border-radius: 20px;
+}
+/* Body / Main */
+
+/* Navigation */
+
+nav {
+    display: flex;
+    margin: 20px;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: BungeeShade-Regular;
+    color: rgba(240, 240, 240, 0.742);
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+a {
+    font-family: Barlow-Semi-Condensed;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(238, 238, 238, 0.677);
+    margin-top: 20px;
+}
+
+nav > a:nth-child(1):hover,
+nav > a:nth-child(3):hover, 
+nav > a:nth-child(4):hover {
+    background-color:  rgba(35, 35, 35, 0.6);
+    color: white;
+}
+
+nav > a:nth-child(2) {
+    border: 0.5px solid white;
+    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0.823);
+    font-weight: bolder;
+    cursor: auto;
+}
+
+/* Navigation */ 
+
+
+
+
+
+
+
+/* first-container */
+
+.first-container { 
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(240, 240, 240, 0.742);
+    width: 78vw;
+    height: 100vh;
+    display: flex;
+    margin: 15px 15px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 80px;
+}
+
+h2 { 
+    font-size: 40px;
+    font-family: BungeeOutline-Regular;
+    color: rgba(240, 240, 240, 0.742);
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+p {
+    padding: 20px;
+    font-family: Barlow-Semi-Condensed;
+}
+
+.album {
+    display: grid;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;   
+}
+
+.right {
+    display: grid;
+}
+
+/* First-container */
