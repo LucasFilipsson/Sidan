@@ -93,11 +93,6 @@ nav > a:nth-child(2) {
 /* Navigation */ 
 
 
-
-
-
-
-
 /* first-container */
 
 .first-container { 
@@ -142,7 +137,12 @@ img {
 }
 
 .right {
-    display: grid;
+     display: grid;
 }
 
+ol {
+    background-color: rgb(255, 225, 0);
+    color: hotpink;
+}
 /* First-container */
+
