@@ -32,8 +32,6 @@
 
 /* Fonts */
 
-
-
 /* Body / Main */
 
 * {
@@ -42,7 +40,7 @@
 
 body {
     margin: 0;
-    background-image: url(images/170505160212-jimi-hendrix-tease-1.jpg);
+    background-image: url(images/jimi-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -59,9 +57,13 @@ main {
     margin-bottom: 120px;
 }
 
+main > p {
+    color: white;
+    margin: 1vw;
+    padding-left: 10px;
+}
+
 /* Body / Main */
-
-
 
 /* Navigation */
 
@@ -91,8 +93,6 @@ a {
     background-color: rgba(238, 238, 238, 0.677);
     margin-top: 20px;
     font-family: Barlow-Semi-Condensed;
-
-
 }
 
 nav>a:nth-child(1):hover,
@@ -112,8 +112,6 @@ nav>a:nth-child(2) {
 
 /* Navigation */
 
-
-
 /* section-one */
 
 #section-one {
@@ -126,8 +124,6 @@ nav>a:nth-child(2) {
 
 /* section-one */
 
-
-
 /* first-container */
 
 .first-container {
@@ -137,7 +133,7 @@ nav>a:nth-child(2) {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: BungeeOutline-Regular;
     color: rgba(240, 240, 240, 0.742);
     margin: 0;
@@ -210,7 +206,6 @@ div>img:last-child:hover {
     color: rgb(194, 70, 132);
     padding-left: 15px;
     padding-top: 10px;
-
 }
 
 #section-one .first-container > div:last-child > div:nth-child(2) {
@@ -226,10 +221,9 @@ ol {
     padding-left: 15px;
     padding-top: 0;
     font-family: Barlow-Semi-condensed;
+    font-size: 15px;
 }
 /* First-container */
-
-
 
 /* second-container */
 
@@ -245,7 +239,7 @@ ol {
     align-items: center;
     background-color: rgb(194, 70, 132);
     font-family: Barlow-Semi-Condensed;
-    }
+}
 
 .second-container > div:nth-child(1) {
     grid-column: 1 / 2;
@@ -281,14 +275,14 @@ ol {
 }
 
 #section-one > .first-container > div:nth-child(2) > div:nth-child(2) > p,
-#section-one > .first-container > div:nth-child(2) > div:nth-child(3) > p {
+#section-one > .first-container > div:nth-child(2) > div:nth-child(3) > p,
+#section-two > .third-container > div:nth-child(2) > div:nth-child(2) > p,
+#section-two > .third-container > div:nth-child(2) > div:nth-child(3) > p {
     font-size: 20px;
     font-weight: bold;    
 }
 
 /* second-container */
-
-
 
 /* section-two */
 
@@ -301,8 +295,6 @@ ol {
 }
 
 /* section-two */
-
-
 
 /* third-container */
 
@@ -348,19 +340,11 @@ ol {
     border-radius: 0 0 0 15px;
 }
 
-#section-two .third-container > div:last-child > div:nth-child(4) {
+#section-two .third-container > div:last-child > div:nth-child(3) {
     border-radius: 0 0 15px 0;
 }
 
-#section-two > .third-container > div:nth-child(2) > div:nth-child(2) > p,
-#section-two > .third-container > div:nth-child(2) > div:nth-child(3) > p {
-    font-size: 20px;
-    font-weight: bold;
-}
-
 /* third-container */
-
-
 
 /* forth-container */
 
@@ -377,7 +361,7 @@ ol {
     background-color: rgb(251, 235, 202);
     color: rgb(60, 165, 206);
     font-family: Barlow-Semi-Condensed;
-    }
+}
 
 .forth-container > div:nth-child(1) {
     grid-column: 1 / 3;
@@ -395,7 +379,7 @@ ol {
     grid-column: 4 / 6;
     border-radius: 0 15px 15px 15px;
     color: white;
-    background-image: url(images/3b646eee2e69fd3c4e063635b1c99e00.jpg);
+    background-image: url(images/studio.jpg);
     background-position: center;
     background-size: cover;
     align-items: flex-end;
@@ -408,34 +392,64 @@ ol {
     grid-column: 6 / 7;
     padding: 40px 15px;
     border-radius: 15px 15px 0 15px;
-
 }
 
 /* Media Queries */
 
 @media (max-width: 500px) {
    body {
-        background-image: url(images/jimi-drinking.jpg) ;
-        background-position: right;
+        background-image: url(images/mobile.jpg) ;
+        background-position: center;
     }
    
    main {
     width: 100vw;
     margin: 0;
     border-radius: 0;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.4)
    }
    
     h1 {
-        font-size: 70px;
+        font-size: 15vw;
         text-align: center;
+        margin: 20px auto 0 auto;
+        padding-bottom: 40px;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    h3 {
+        font-size: 6vw;
     }
 
     a {
-        font-size: 15px;
-        padding: 15px;
+        font-size: 3vw;
+        padding: 8px;
         border-radius: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
+
+    ol {
+        font-size: 3.5vw;
+    }
+
+    ul {
+        font-size: 4vw;
+    }
+
+    #section-one > .first-container > div:nth-child(2) > div:nth-child(2) > p,
+    #section-one > .first-container > div:nth-child(2) > div:nth-child(3) > p,
+    #section-two > .third-container > div:nth-child(2) > div:nth-child(2) > p,
+    #section-two > .third-container > div:nth-child(2) > div:nth-child(3) > p {
+        font-size: 4.3vw;
     }
 
     .first-container,
@@ -445,8 +459,9 @@ ol {
 
     .first-container > div:last-child,
     .third-container > div:last-child  {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50%;
+        grid-template-columns: 40.5vw 40.5vw;
+        grid-template-rows: 40.5vw 40.5vw;
+        margin: 0 auto;
     }
 
     .second-container {
@@ -510,19 +525,22 @@ ol {
     div>img:last-child:hover {
     opacity: 1;
     }
-
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
     h1 {
-        font-size: 60px;
+        font-size: 55px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
-    nav a {
+    h3 {
+        font-size: 22px;
+    }
+
+    a {
         font-size: 20px;
     }
 
@@ -530,7 +548,50 @@ ol {
 
 @media (min-width: 900px) and (max-width: 1200px) {
     h1 {
-        font-size: 70px;
+        font-size: 6vw;
+    }
         
+    a   {
+        font-size: 2.5vw;
+    }
+
+    h2 {
+        font-size: 2.9vw;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+    }
+
+    p {
+        font-size: 1.4vw;
+    }
+
+    ul {
+        font-size: 1.4vw;
+    }
+
+    ol {
+        font-size: 1.3vw;
+    }
+
+    #section-one > .first-container > div:nth-child(2) > div:nth-child(2) > p,
+    #section-one > .first-container > div:nth-child(2) > div:nth-child(3) > p,
+    #section-two > .third-container > div:nth-child(2) > div:nth-child(2) > p,
+    #section-two > .third-container > div:nth-child(2) > div:nth-child(3) > p {
+        font-size: 1.6vw;
     }
 }
+@media (min-width:1200px) {
+    main {
+        width: 1020px;
+    }
+
+    .first-container > div:last-child, 
+    .third-container > div:last-child {
+        grid-template-columns: 209px 209px;
+        grid-template-rows: 209px 209px auto;
+    }
+
+}
+
